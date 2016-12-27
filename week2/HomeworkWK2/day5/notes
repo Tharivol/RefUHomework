@@ -1,0 +1,65 @@
+Java Script Functions
+
+Have 4 components.
+	-reservered word 'function'
+	- name (optional)
+	- set of parameters/arguments
+	- set of statements - body of the function
+
+EC5--Ecma script syntax
+
+// function declaration
+// it can be called/invoked anywehere in the file since its declared at compile time. 
+
+	function calculateArea(length, height) {
+		var area= length * height;
+		return area;	//return will give a value back after invoking the function
+	}
+
+	Anonymus function
+
+	// define an anonymus function and assign it to a variable
+	// you can only invoke the funciton after it's declaration
+
+	var calculateArea= (length, height) {
+		var area= length * height;
+		return area;	//return will give a value back after invoking the function
+
+// EC6 (2016, increasingly supported by browsers but not fully supported yet, but is supported //by Node
+
+calculate(length, height) {
+		var area= length * height;
+		return area;	//return will give a value back after invoking the function
+}
+
+Invoking a Function
+
+// Calling/ invoking/ executing a function
+
+// sometimes we want to capture the result/ return value of the function
+var squareArea = calculate (2,4);
+
+//sometimes we want the funciton to do something and don't care about a return value
+
+saveToDatabase(mySpecialThing);
+
+console.log
+string.split()
+array.join()
+
+## Functional Scope
+
+var globalVar ='global';
+
+function myFunction()	{
+	var localVar= 'local to my funciton';
+	console.log(globalVar)
+}
+
+	console.log(localVar);  // this is undefined.
+
+## Variable/Function Naming Conventions
+lowercase
+UPPERCASE
+snake_case
+camelCase
