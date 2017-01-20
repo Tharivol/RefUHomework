@@ -1,0 +1,31 @@
+var tripleFive = function (){
+  for (var i=0; i<3; i++)   {
+  console.log('Five');
+    }
+}
+tripleFive();
+
+var lastLetter = function(str) {
+    console.log ('Last letter of '+str+' is '+str.charAt(str.length-1))
+
+}
+
+lastLetter('hello')
+lastLetter('island')
+
+var square = function(number)  {
+    return number * number;
+    }
+console.log('The square of 3 is' + " " + square(3));
+
+
+var v = [10,20,30,40,50];
+
+var items = v.length
+
+var total = 0;
+for (var i =0; i < items; i++)  {
+      total += v[i];
+}
+var mean = total/items;
+alert(mean);
